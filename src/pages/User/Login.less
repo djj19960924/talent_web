@@ -1,0 +1,53 @@
+@import '~antd/lib/style/themes/default.less';
+
+.main {
+  display: flex;
+  .loginLogo {
+    width: 410px;
+    height: 440px;
+    margin-left: 140px;
+    margin-top:50px
+  }
+  .loginMain {
+    width: 388px;
+    margin-left:370px;
+    margin-top:60px;
+    @media screen and (max-width: @screen-sm) {
+      width: 95%;
+    }
+    .icon {
+      margin-left: 16px;
+      color: rgba(0, 0, 0, 0.2);
+      font-size: 24px;
+      vertical-align: middle;
+      cursor: pointer;
+      transition: color 0.3s;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  
+    .other {
+      margin-top: 24px;
+      line-height: 22px;
+      text-align: left;
+      .register {
+        float: right;
+      }
+    }
+  }
+}
+.container{
+  background: #fff;
+  border-radius: 5px;
+  padding: 25px 30px;
+  .title{
+    color: #1890FF;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 24px;
+    padding-bottom:22px; 
+    border-bottom: 1px solid #D5D5D5
+  }
+}

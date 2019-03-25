@@ -1,0 +1,45 @@
+@import '~antd/lib/style/themes/default.less';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  background: @layout-body-background;
+  .header {
+    height: 100px;
+  }
+  .content {
+    padding:0!important;
+    width: 80%;
+    min-width: 1000px;
+    max-width: 1400px;
+    margin-bottom:20px; 
+    .logo {
+      height: 42px;
+      margin-right: 16px;
+      vertical-align: top;
+      margin-left:30px; 
+    }
+    .title {
+        position: relative;
+        top: 2px;
+        color: #0358D9;
+        font-weight: 600;
+        font-size: 30px;
+    }
+  }
+  .loginContent{
+    width: 96%;
+    height: 550px;
+    background-image: url('../assets/login_bg1.png');
+    margin: 0 auto;
+    position: relative;
+    z-index: 1000;
+  } 
+}
+
+
+
+
+
